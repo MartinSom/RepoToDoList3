@@ -1,0 +1,7 @@
+﻿<div class="gapOverListItems"></div>
+<div ng-repeat="item in items"  ng-click="selectItem(item)">
+    <div class="listItem" ng-class="{listItemActive:itemIsSelected(item)}">
+    <p> {{item.text}} </p>
+    </div>
+    <hr/>
+</div>

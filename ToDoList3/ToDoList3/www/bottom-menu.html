@@ -1,0 +1,11 @@
+﻿<div class="bottomMenu">
+        <div id="closeItem" ng-show="isSelected()" class="button" ng-click="closeSelectedItems()">
+            <img src="images/close_40.png"/>
+        </div>
+        <div id="clearSelection" ng-show="isSelected()" class="button" ng-click="clearSelection()">
+            <img src="images/back_40.png" />
+        </div>
+        <div id="AddItem" ng-hide="isSelected() || formIsVisible()" class="button" ng-click="showForm()">
+            <img src="images/add_40.png"/>
+        </div>
+</div>
