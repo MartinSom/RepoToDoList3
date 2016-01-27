@@ -1,6 +1,13 @@
 {
     "name": "ToDoList3",
     "version": "1.0.0",
-    "dependencies": {
-    }
+  "dependencies": {
+  },
+  "devDependencies": {
+    "karma": "^0.13.19",
+    "karma-jasmine": "^0.3.6",
+    "karma-chrome-launcher": "^0.2.2",
+    "gulp": "^3.9.0"
+  }
+
 }

@@ -18,6 +18,32 @@
 
         // load list items form service
         FireBaseService.loadToDoItems(function (toDoItems) {
+
+            /*(_ = function (__) {
+                    return !__ || __ * _(--__)
+              })(1 << -~[] + !![]);*/
+
+            //(1 << -~[] + !![]) = 4;
+
+            // operator predence. + before <<
+            //!![] = true// []=true // !true = false // !false= true // NOT
+            //-~[] = 1; // ~ // bitwise not // -(x + 1)
+            //1 + true = 2// true=1
+            //1 << 2 = 4;// bitwise left shift
+            
+            // function expression // function(a,b){ return a + b; }
+            // assign function expression to _
+            // call immediately function with argument(arg=4) // (function expression)(arguments);
+            // !__ || __ * _(--__)
+            // recursive calls till __ = 0
+            // !4 || 4 * func(3)
+            // !3 || 3 * func(2)
+            // !2 || 2 * func(1)
+            // !1 || 1 * func(0)
+            // !0
+
+            // result is 24
+
             $scope.items = toDoItems;
             $scope.$apply();
         });
